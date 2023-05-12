@@ -11,17 +11,16 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)){ 
-  console.log("✅ Assertion Correct! ⭐️ These values are a match ✅")
-
-} else {
-  console.log("❌ False Assertion; These values are not a match ❌")
-
-}
- // ;
+  if (eqArrays(arr1, arr2)) {
+    console.log("✅ Assertion Correct! ⭐️ These values are a match ✅");
+  } else {
+    console.log("❌ False Assertion; These values are not a match ❌");
+  }
 };
 
 assertArraysEqual([90, 77], [90, 77]);
+
+
 
 
 /*
