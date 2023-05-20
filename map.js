@@ -1,28 +1,21 @@
-// https://flex-web.compass.lighthouselabs.ca/workbooks/flex-m01w2/activities/227?journey_step=30&workbook=5
-/*
-const map = function() {
-  
-console.log(results1);
- // empty for now :)
-}
-*/
-
-const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
-
-const map = function(array, callback) {
-  const results = [];
-  for (let item of array) {
-    console.log('item BEFORE: ', item);
-    console.log('item AFTER: ', callback(item));
-    console.log('---');
-  }
-  return results;
-}
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
     results.push(callback(item));
   }
   return results;
-}
+};
+
+const assertArraysEqual = function(results, callback) {
+  if (map(results, callback)) {
+    console.log("✅ Assertion Correct! ⭐️ These values are a match ✅");
+  } else {
+    console.log("❌ False Assertion; These values are not a match ❌");
+  }
+};
+console.log(assertArraysEqual);
+
+
+const words = ["ground", "control", "to", "major", "tom"];
+const results1 = map(words, word => word[0]);
+console.log(results1);
