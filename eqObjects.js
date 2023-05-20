@@ -1,14 +1,3 @@
-/*
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`⭐️ Assertion Passed ⭐️💫😁: + " " + ${actual} === ${expected}`);
-  }
-  if (actual !== expected) {
-    console.log(`😡 Assertion Failed ❌😡🤬: + " " + ${actual} !== ${expected}`);
-  }
-};
-/*/
-
 const eqObjects = function(obj1, obj2) {
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
