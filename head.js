@@ -7,4 +7,5 @@ const head = function(arr) {
   console.log(arrFirst);
 };
 
+
 module.exports = head;
