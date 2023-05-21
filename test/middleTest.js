@@ -1,3 +1,18 @@
+const assert = require('chai').assert;
+const middle   = require('../middle');
+
+describe("#middle", () => {
+  it("returns 1 for [1, 2, 3]", () => {
+    assert.assert.deepEqual(middle([1, 2, 3]), 1);
+  });
+});
+
+ it("returns '5' for ['5']", () => {
+    assert.assert.deepEqual(middle(['5']), '5'); 
+  });
+
+
+/*
 const middle = require('../middle');
 
 console.log(middle([1, 2, 3, 4, 5]));
@@ -10,3 +25,4 @@ console.log(middle([99, 62, 42, 55, 106]));
 console.log(middle([-1, 2, 903, 8, 4, 12]));
 console.log(middle([10, 200, 39, 48, 555]));
 console.log(middle([416, 702, 905, 401, 533, 8]));
+*/
