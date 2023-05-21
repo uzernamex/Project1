@@ -1,4 +1,9 @@
+const assertEqual = require('../assertEqual');
+const eqArrays = require('../eqArrays');
+
+
 const eqObjects = function(obj1, obj2) {
+  
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
   if (keys1.length !== keys2.length) {
@@ -16,16 +21,15 @@ const eqObjects = function(obj1, obj2) {
   return true;
 };
 
-const assertObjectsEqual = function(obj1, obj2) {
-  if (eqObjects(obj1, obj2)) {
-    console.log("✅ Assertion Correct! ⭐️ These values are a match ✅");
-  } else {
-    console.log("❌ False Assertion; These values are not a match ❌");
-  }
-};
+
+module.exports = eqObjects;
 
 
+
+
+/*
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 console.log(eqObjects(shirtObject, anotherShirtObject));
 assertObjectsEqual(shirtObject, anotherShirtObject);
+*/
